@@ -1,0 +1,6 @@
+version: '2.2'
+
+services:
+  suricata:
+    environment:
+      - SURICATA_OPTIONS=-i ${NETWORK_INTERFACE1} -i ${NETWORK_INTERFACE2} -vvv
